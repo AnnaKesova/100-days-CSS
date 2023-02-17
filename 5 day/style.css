@@ -10,10 +10,9 @@
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-  background: #43389f;
   height: 220px;
   width: 280px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 3px;
   box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -111,6 +110,8 @@
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 10px;
   box-sizing: border-box;
+  position: relative;
+  height: 35px;
 }
 
 .content__description-4 {
@@ -151,6 +152,7 @@
   height: 3px;
   width: 3px;
   border-radius: 50%;
+  z-index: 5;
 }
 
 .tooltip-1 {
@@ -159,10 +161,8 @@
 }
 
 .tooltip:hover::after {
-  content: "458";
   visibility: visible;
   opacity: 1;
-  transform: translate3d(-50%, 0, 0);
   border-radius: 3px;
   background-color: red;
   height: 18px;
@@ -172,7 +172,7 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: fff;
+  color: #fff;
   padding: 5px 2px;
   transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
   box-sizing: border-box;
@@ -181,6 +181,185 @@
   bottom: 20px;
 }
 .tooltip-1:hover::after {
+  content: "458";
   left: 0;
   bottom: 20px;
+}
+
+.tooltip-2 {
+  left: 48px;
+  bottom: -5px;
+}
+
+.tooltip-2:hover::after {
+  content: "812";
+  left: 0;
+  bottom: 15px;
+}
+
+.tooltip-3 {
+  left: 88px;
+  bottom: -16px;
+}
+
+.tooltip-3:hover::after {
+  content: "746";
+  left: 0;
+  bottom: 19px;
+}
+
+.tooltip-4 {
+  left: 128px;
+  bottom: -5px;
+}
+
+.tooltip-4:hover::after {
+  content: "877";
+  left: 0;
+  bottom: 16px;
+}
+
+.tooltip-5 {
+  left: 170px;
+  bottom: -32px;
+}
+
+.tooltip-5:hover::after {
+  content: "517";
+  left: 5px;
+  bottom: 16px;
+}
+
+.tooltip-6 {
+  left: 209px;
+  bottom: -41px;
+}
+
+.tooltip-6:hover::after {
+  content: "434";
+  left: -2px;
+  bottom: 18px;
+}
+
+.tooltip-7 {
+  left: 250px;
+  bottom: -11px;
+}
+
+.tooltip-7:hover::after {
+  content: "458";
+  left: 2px;
+  bottom: 15px;
+}
+
+.content__svg_blue {
+  max-width: 280px;
+  position: absolute;
+  bottom: -72px;
+  left: 0;
+}
+
+.content__polyline_blue {
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke: #7BA2FF;
+}
+
+.tooltip-8 {
+  left: 6px;
+  bottom: -19px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-8:hover::after {
+  content: "26";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-9 {
+  left: 48px;
+  bottom: -8px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-9:hover::after {
+  content: "41";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-10 {
+  left: 88px;
+  bottom: -22px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-10:hover::after {
+  content: "22";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-11 {
+  left: 128px;
+  bottom: -12px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-11:hover::after {
+  content: "36";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-12 {
+  left: 171px;
+  bottom: -19px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-12:hover::after {
+  content: "25";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-13 {
+  left: 209px;
+  bottom: -31px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-13:hover::after {
+  content: "13";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
+}
+
+.tooltip-14 {
+  left: 250px;
+  bottom: -21px;
+  background-color: #7BA2FF;
+}
+
+.tooltip-14:hover::after {
+  content: "20";
+  left: 2px;
+  bottom: 15px;
+  background-color: #7BA2FF;
+  padding-left: 5px;
 }
